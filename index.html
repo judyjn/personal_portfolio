@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compactible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\portfolio_website\src\style.css" />
+    <link rel="stylesheet" href="E:\portfolio_website\src\media.css" />
+    <script src="https://kit.fontawesome.com/0379b272e5.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+     <nav id="desktop-nav">
+        <div class="logo">Judy Joseph</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+     </nav>
+     <nav id="hamburger-nav">
+        <div class="logo">Judy Joseph</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a> </li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>    
+            </div>
+        </div>
+     </nav>
+     <section id="profile">
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Judy Joseph</h1>
+            <div class="btn-container">
+                <button class="btn btn-color2" onclick="window.open('path to resume')">Download CV</button>
+                <button class="btn btn-color1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div class="socials-container">
+                <a href="https://github.com/judyjn">
+                    <i class="fa-brands fa-github icons"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/judy-naduvilaveettil/">
+                    <i class="fa-brands fa-linkedin icons"></i>
+                </a>
+            </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section-text-p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h3>Experience</h3>
+                        <p> 1+ year<br/> Software Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>B.Tech Bachelors Degree<br/> PCM with Computer Science High School</p>   
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt cum ut magnam alias corporis, unde quam rerum quaerat iusto tempore adipisci suscipit tenetur! Quis nesciunt sunt ad omnis, eveniet impedit.</p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angle-down icons arrow" onclick="location.href='#projects'"></i>
+     </section>
+     <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/project1.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project 1</h2>
+                    <div class="btn-container">
+                        <button class="btn-color2 project btn" onclick="location.href='githubrepo link'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/project1.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project 1</h2>
+                    <div class="btn-container">
+                        <button class="btn-color2 project btn" onclick="location.href='githubrepo link'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./img/project1.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project 1</h2>
+                    <div class="btn-container">
+                        <button class="btn-color2 project btn" onclick="location.href='githubrepo link'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angle-down icons arrow" onclick="location.href='#contact'"></i>
+     </section>
+     <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-cont1">
+            <div class="contact-info-cont2">
+                <i class="fa-solid fa-envelope icons contact-icon"></i>
+                <p><a href="mailto:judyjoseph1010@gmail.com">
+                judyjoseph1010@gmail.com</a></p>
+            </div>
+            <div class="contact-info-cont2">
+                <i class="fa-brands fa-linkedin icons contact-icon"></i>
+                <p><a href="https://www.linkedin.com/in/judy-naduvilaveettil">
+                LinkedIn</a></p>
+            </div>
+        </div>
+     </section>
+     <footer>
+        <nav>
+            <div class="nav-links-cont">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+        </nav>
+     </footer>
+    <script src="E:\portfolio_website\src\app.js"></script>  
+</body>
+</html>
